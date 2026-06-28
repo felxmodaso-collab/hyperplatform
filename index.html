@@ -6,7 +6,8 @@
 <title>Хайперплатформ (HyperPlatform) — платформа для чат-ботов · ООО «Хайперпартнер»</title>
 <meta name="description" content="HyperPlatform — платформа для создания, управления и взаимодействия с чат-ботами в рамках корпоративных и бизнес-коммуникаций. Правообладатель — ООО «Хайперпартнер». Функциональные характеристики, стоимость, документация." />
 <meta name="robots" content="index,follow" />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2316302B'/%3E%3Cpath d='M11 9l7 7-7 7' fill='none' stroke='%23C79A7E' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+<link rel="icon" type="image/png" href="brand/favicon.png" />
+<link rel="apple-touch-icon" href="brand/favicon-180.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -90,8 +91,9 @@ body.menu .overlay{opacity:1;visibility:visible}
 .overlay .cta{margin-top:26px;border:0;justify-content:center;background:linear-gradient(120deg,var(--mint-bright),var(--mint-deep));color:#fff;border-radius:14px;font-weight:600;font-size:17px;border-bottom:0}
 
 /* ---------- HERO (dark) ---------- */
-.hero{position:relative;color:#fff;overflow:hidden;
-  background:radial-gradient(70% 50% at 16% 18%,rgba(39,180,153,.16),transparent 56%),radial-gradient(54% 54% at 88% 26%,rgba(247,207,180,.07),transparent 55%),linear-gradient(168deg,#16302B 0%,#10271E 52%,#0a1c15 100%)}
+.hero{position:relative;color:#fff;overflow:hidden;background:#0a1c15}
+.hero-photo{position:absolute;inset:0;background:url("img/office.webp") center 68%/cover;transform:scale(1.02)}
+.hero-overlay{position:absolute;inset:0;background:radial-gradient(70% 50% at 16% 18%,rgba(39,180,153,.15),transparent 56%),radial-gradient(54% 54% at 88% 26%,rgba(247,207,180,.06),transparent 55%),linear-gradient(101deg,rgba(9,24,18,.975) 0%,rgba(9,24,18,.85) 40%,rgba(10,26,19,.58) 74%,rgba(10,26,19,.48) 100%),linear-gradient(0deg,rgba(8,20,15,.86) 0%,transparent 34%)}
 .hero-grain{position:absolute;inset:0;opacity:.05;mix-blend-mode:overlay;pointer-events:none;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 .hero-in{position:relative;z-index:2;max-width:var(--frame);margin:0 auto;padding:148px 24px 96px;display:grid;gap:54px;align-items:center}
@@ -254,12 +256,14 @@ footer{color:#fff;padding:66px 0 38px;
 
   <!-- HERO -->
   <section class="hero" id="about" aria-labelledby="h-about">
+    <div class="hero-photo"></div>
+    <div class="hero-overlay"></div>
     <div class="hero-grain"></div>
     <div class="hero-in">
       <div>
         <span class="eyebrow d">ИТ-продукт · ООО «Хайперпартнер»</span>
         <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/></svg>Аккредитованная ИТ-компания · реестр Минцифры России</div>
-        <h1 id="h-about">Хайперплатформ<span class="latin">HyperPlatform</span></h1>
+        <h1 id="h-about">Хайперплатформ</h1>
         <p class="sub"><b>Платформа</b> для создания, управления и взаимодействия с&nbsp;чат-ботами в&nbsp;рамках корпоративных и&nbsp;бизнес-коммуникаций.</p>
         <div class="hero-cta"><a class="pill-metal" href="#features"><span>Возможности ПО</span></a></div>
       </div>
@@ -267,7 +271,6 @@ footer{color:#fff;padding:66px 0 38px;
         <div class="spec-hd">
           <span class="spec-ava"><img src="brand/logo-mark-cream.png" alt=""></span>
           <span class="nm">HyperPlatform</span>
-          <span class="dot" aria-hidden="true"></span>
         </div>
         <div class="spec-row"><div class="k">Полное наименование ПО</div><div class="v">HyperPlatform — платформа для создания и управления чат-ботами</div></div>
         <div class="spec-row"><div class="k">Краткое наименование</div><div class="v">HyperPlatform («Хайперплатформ»)</div></div>
@@ -297,7 +300,6 @@ footer{color:#fff;padding:66px 0 38px;
     <div class="wrap">
       <span class="eyebrow">Целевая аудитория</span>
       <h2 class="h2" id="h-aud">Кому предназначено ПО</h2>
-      <p class="lead">Программное обеспечение «Хайперплатформ» рассчитано на три категории пользователей.</p>
       <div class="aud-grid">
         <div class="aud"><h3>Администраторы</h3><p>Управление компаниями, ботами, пользователями.</p></div>
         <div class="aud"><h3>Разработчики</h3><p>Создание и настройка ботов; программирование логики взаимодействия; настройка команд и сценариев.</p></div>
